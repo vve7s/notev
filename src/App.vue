@@ -1,5 +1,4 @@
 <template>
-  <!--<img alt="Vue logo" src="./assets/logo.png">-->
   <Register />
 </template>
 
@@ -19,5 +18,4 @@ export default {
     margin: 0;
     padding: 0;
   }
-
 </style>
