@@ -1,33 +1,18 @@
 <template>
-  <Header msg="Sign up for more.."/>
   <div class="home">
-    <textarea name="not" style="">Dou you think?</textarea>
+    <img alt="Vue logo" src="../assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-import Header from '@/components/layouts/Header.vue'
+// @ is an alias to /src
+import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'Home',
   components: {
-    Header
+    HelloWorld
   }
 }
 </script>
-
-<style>
-  textarea {
-    left: 0;
-    top: 3rem;
-    right: 0;
-    bottom: 0;
-    font-size: 32pt !important;
-    position: fixed;
-    width: 100%;
-    padding: 1rem;
-    outline-style: none;
-    border: 0;
-  }
-
-</style>
