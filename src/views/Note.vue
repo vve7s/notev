@@ -1,7 +1,9 @@
 <template>
-  <div class="about">
-    <h1><textarea @keydown.enter="SEND_MESSAGE" style="width: 250px; height: 250px;"></textarea></h1>
+  <app-header/>
+  <div class="note">
+    <textarea @keydown.enter="SEND_MESSAGE" class="position-fixed py-5 px-3" style="left:0;top:0;right:0;bottom:0;font-size:15pt;font-family:arial;width:100%;outline-style: none;border:0;"></textarea>
   </div>
+  <app-footer/>
 </template>
 
 <script>
@@ -27,3 +29,9 @@ export default {
 
 }
 </script>
+
+<style>
+  body {
+    background: #fff !important;
+  }
+</style>

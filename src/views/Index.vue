@@ -12,16 +12,21 @@ export default {
   },
 
   beforeCreate: function() {
-    console.log("beforeCreate");
+    /*
     this.$appAxios.get("/test").then(response => {
       console.log(response);
     })
+    */
+    this.$http.get('/test').then(response => {
+      console.log(response);
+    }).catch(error => {
+      // this.$eResponse(error)
+      console.log(error.response);
+    });
   }
 }
 </script>
 
 <style>
-  body {
-    background: #000;
-  }
+  
 </style>

@@ -6,7 +6,6 @@ const axios = require('axios').default;
 
 
 export const appAxios = axios.create({
-  baseURL : "http://api.vve7s.com/note",
-  headers: {'Access-Control-Allow-Origin': '*'}
+  baseURL : "http://api.vve7s.store/note",
 
 })

@@ -1,5 +1,6 @@
 <template>
-  <div style="position: absolute; left: 50%; top: 50%; margin-left: -10rem; margin-top: -17rem;">
+  <div id="index">
+    <div style="position: absolute; left: 50%; top: 50%; margin-left: -10rem; margin-top: -17rem;">
       <span style="color: #fff; font-size: 52px; font-weight: bold;">This is a&nbsp;</span>
       <span style="color: #fb0800; font-size: 52px; font-weight: bold;">NOTE</span>
       <br>
@@ -15,17 +16,17 @@
       <br>
       <br>
       <div>
-          <a href="#" style="text-decoration:none; color: #fff">LOG IN</a>
-          <a href="#" style="text-decoration:none; color: #fb0800; float: right;">REGISTER</a>
+        <a href="#" style="text-decoration:none; color: #fff">LOG IN</a>
+        <a href="#" style="text-decoration:none; color: #fb0800; float: right;">REGISTER</a>
       </div>
       <br>
       <br>
       <br>
       <br>
-      <div style="text-align: center;">
-          <span>La belle dame sans merci</span>
+      <div style="text-align: center; color: #000;">
+        <span>La belle dame sans merci</span>
       </div>
-
+    </div>
   </div>
 </template>
 
@@ -34,3 +35,10 @@ export default {
   name: 'Index',
 }
 </script>
+
+<style>
+  #index {
+    min-height: 100vh;
+    background: #000 !important;
+  }
+</style>
